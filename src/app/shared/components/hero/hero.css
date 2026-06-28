@@ -52,11 +52,9 @@ h1 {
         padding: 0;
         box-sizing: border-box;
         line-height: 50px;
+        background: rgba(0, 0, 0, 0.623);
     }
     .hero-text{
         font-size: x-large;
-    }
-    .hero{
-        background: transparent;
     }
 }
