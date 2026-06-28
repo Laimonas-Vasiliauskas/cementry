@@ -6,14 +6,10 @@
     background-repeat: no-repeat;
     color: var(--cream);
     height: 720px;
+    padding: 10px;
 }
 
-.hero-content {
-    margin: 40px;
-    padding: 30px;
-}
-
-.hero h1 {
+h1 {
     color: var(--gold-light);
     font-family: 'Cormorant Garamond', serif;
     font-size: 50px;
@@ -50,26 +46,17 @@
 
 @media (max-width: 600px) {
     .hero-content {
+        width: 100%;
+        max-width: none;
         margin: 0;
-        padding: 10px;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 50px;
     }
-
-    .hero h1 {
-        font-size: 70px;
-        line-height: 100px;
+    .hero-text{
+        font-size: x-large;
     }
-
-    .hero-text {
-        font-size: 25px;
-        line-height: 40px;
-    }
-
-    .hero-eyebrow{
-        font-size: 20px;
-    }
-
-    .hero-button{
-        margin: 10px;
-        width: 200px;
+    .hero{
+        background: transparent;
     }
 }

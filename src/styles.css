@@ -10,24 +10,15 @@
   --white: #FFFFFF;          /* svarbiausias tekstas */
   --muted: #B8B1A6;          /* mažiau svarbus tekstas */
 }
-* {
-  box-sizing: border-box;
-}
 
 html,
 body {
   width: 100%;
   margin: 0;
-  overflow-x: hidden;
   margin: 0;
   background: var(--black);
   color: var(--cream);
   font-family: Arial, sans-serif;
-}
-
-app-root {
-  display: block;
-  width: 100%;
 }
 
 .services-dropdown {
