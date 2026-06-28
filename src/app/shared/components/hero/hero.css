@@ -1,0 +1,84 @@
+.hero {
+    display: flex;
+    background: url('/images/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--cream);
+    height: 720px;
+}
+
+.hero-content {
+    margin: 40px;
+    padding: 30px;
+}
+
+.hero h1 {
+    color: var(--gold-light);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.hero-text {
+    color: var(--cream);
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.hero-eyebrow{
+    color: var(--gold);
+    font-size: 25px;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 30px;
+    padding: 10px;
+}
+
+.hero-button {
+    margin-left: 40px;
+    padding: 10px;
+    background-color: var(--gold);
+    text-decoration: none;
+    color: var(--dark);
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100px;
+}
+
+@media (max-width: 600px) {
+    .hero-content {
+        margin: auto;
+        padding: auto;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+        line-height: 100px;
+        margin: auto;
+        padding: auto;
+    }
+
+    .hero-text {
+        font-size: 25px;
+        line-height: 40px;
+        margin: auto;
+        padding: auto;
+    }
+
+    .hero-eyebrow{
+        font-size: 20px;
+        margin: auto;
+        padding: auto;
+    }
+
+    .hero-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 200px;
+    }
+}

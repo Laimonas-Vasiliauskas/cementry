@@ -1,0 +1,41 @@
+header {
+    background: var(--dark);
+    border-bottom: 1px solid var(--gold-dark);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: large;
+    padding: 30px;
+}
+
+.service-menu{
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    color: var(--cream);
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: var(--gold);
+}
+
+.services-menu a:hover{
+    color: var(--gold);
+}
+
+@media (max-width: 600px) {    
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: medium;
+        flex-wrap: wrap;
+    }
+}

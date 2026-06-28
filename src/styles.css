@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --black: #0B0B0B;          /* pagrindinis fonas */
+  --dark: #141414;           /* header, footer, kortelės */
+  --dark-gray: #1C1C1C;      /* hover / sekcijų fonas */
+  --gold: #C79A43;           /* pagrindinė aukso spalva */
+  --gold-light: #E0B968;     /* tekstų akcentai, hover */
+  --gold-dark: #8E6728;      /* tamsesni aukso rėmeliai */
+  --cream: #F3EBDD;          /* šviesus tekstas */
+  --white: #FFFFFF;          /* svarbiausias tekstas */
+  --muted: #B8B1A6;          /* mažiau svarbus tekstas */
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  margin: 0;
+  background: var(--black);
+  color: var(--cream);
+  font-family: Arial, sans-serif;
+}
+
+app-root {
+  display: block;
+  width: 100%;
+}
+
+.services-dropdown {
+  background: var(--dark) !important;
+  border: 1px solid var(--gold-dark);
+  border-radius: 0 !important;
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+.services-dropdown .mat-mdc-menu-item {
+  color: var(--cream) !important;
+}
+
+.services-dropdown .mat-mdc-menu-item:hover {
+  color: var(--gold-light) !important;
+}
+
+.mdc-button__label {
+    color: var(--cream) !important;
+}
+
+.mdc-button__label:hover {
+  color: var(--gold) !important;
+}
+
+.mat-mdc-unelevated-button:not(:disabled){
+  background-color: var(--dark) !important;
+}
+
+.mat-mdc-unelevated-button{
+  font-size: large !important;
+  font-family: Arial, sans-serif !important;
+  transition: none !important;
+  height: 0 !important;
+  padding: 0 !important;
+}

@@ -1,0 +1,17 @@
+<header>
+  <!-- <a routerLink="/">LOGOTIPAS</a> -->
+  <nav class="service-menu">
+      <a routerLink="/">Pradžia</a>
+      <a routerLink="/atlikti-darbai">Atlikti darbai</a>
+      <a routerLink="/kontaktai">Kontaktai</a>
+      <button mat-flat-button [matMenuTriggerFor]="servicesMenu" class="services-button">
+      Paslaugos ▼ 
+      </button>
+    <mat-menu #servicesMenu="matMenu" class="services-dropdown">
+      <a mat-menu-item routerLink="/paminklai">Paminklų gamyba</a>
+      <a mat-menu-item routerLink="/kapu-prieziura">Kapų tvarkymas</a>
+      <a mat-menu-item routerLink="/granito-plokstes">Granito plokštės</a>
+      <a mat-menu-item routerLink="/pamatu-liejimas">Pamatų liejimas</a>
+    </mat-menu>
+  </nav>
+</header>
