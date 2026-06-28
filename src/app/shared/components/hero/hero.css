@@ -50,8 +50,8 @@
 
 @media (max-width: 600px) {
     .hero-content {
-        margin: auto;
-        padding: auto;
+        margin: 0;
+        padding: 20px;
     }
 
     .hero h1 {
@@ -75,7 +75,7 @@
     }
 
     .hero-button{
-        margin: auto;
+        margin: 10px;
         width: 200px;
     }
 }
