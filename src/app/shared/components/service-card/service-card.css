@@ -1,6 +1,6 @@
 .service-card {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   background: var(--dark);
   border: 1px solid var(--gold-dark);
   overflow: hidden;
@@ -21,7 +21,7 @@
 }
 
 .service-card-content {
-  padding: 26px 22px 28px;
+  padding: 25px 25px 25px;
   text-align: center;
 }
 
@@ -50,4 +50,10 @@
 
 .service-card-content a:hover {
   color: var(--gold-light);
+}
+
+@media (max-width: 600px){
+    .service-card {
+        max-width: 300px;
+    }
 }
