@@ -1,16 +1,16 @@
 .services-section {
-  padding: 90px var(--page-padding);
-  background: var(--black);
-  color: var(--cream);
+    padding: 90px var(--page-padding);
+    background: var(--black);
+    color: var(--cream);
 }
 
 .services-grid {
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin: 50px 0 50px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 50px 0 50px;
 }
 
 .services-section h2{
@@ -21,4 +21,5 @@
     font-size: 50px;
     margin: 50px 0 50px;
     font-family: "Cormorant Garamond", serif;
+    line-height: 1.15;
 }
