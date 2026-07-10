@@ -1,0 +1,93 @@
+.map-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.contact-page{
+    text-align: center;
+    margin: 50px;
+    line-height: 1.15;
+    color: var(--cream);
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+}
+.contact-page h1{
+    color: var(--gold-light);
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 35px 0 50px;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 26px;
+  border: 1px solid var(--gold-dark);
+
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: 0.25s ease;
+}
+
+.gold-btn {
+  background: var(--gold);
+  color: var(--black);
+  border-color: var(--gold);
+}
+
+.gold-btn:hover {
+  background: transparent;
+  color: var(--gold-light);
+}
+
+.viber-btn {
+  background: transparent;
+  color: var(--gold-light);
+}
+
+.viber-btn:hover {
+  background: var(--dark-gray);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+@media (max-width: 600px) {
+    .contact-page {
+    padding: 55px var(--page-padding);
+    }
+
+    .contact-header {
+    margin-bottom: 35px;
+    }
+
+    h1 {
+    font-size: 34px;
+    }
+
+    p {
+    font-size: 15px;
+    line-height: 24px;
+    }
+
+    .map-wrapper iframe {
+    height: 330px;
+    }
+
+    .contact-buttons {
+    flex-direction: column;
+    gap: 12px;
+    }
+
+    .contact-btn {
+    max-width: 280px;
+    }
+}

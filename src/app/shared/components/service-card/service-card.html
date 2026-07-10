@@ -1,1 +1,12 @@
-<p>service-card works!</p>
+<article class="service-card">
+  <img [src]="image" [alt]="title">
+
+  <div class="service-card-content">
+    <h3>{{ title }}</h3>
+    <p>{{ description }}</p>
+
+    <a [routerLink]="link">
+      Sužinoti daugiau →
+    </a>
+  </div>
+</article>

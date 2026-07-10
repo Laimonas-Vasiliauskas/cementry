@@ -9,6 +9,10 @@
     padding: 10px;
 }
 
+.hero-content{
+    padding-top: 30px;
+}
+
 h1 {
     color: var(--gold-light);
     font-family: 'Cormorant Garamond', serif;
