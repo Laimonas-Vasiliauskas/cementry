@@ -95,9 +95,10 @@
   }
 
   .hero-content {
+    align-items: center;
+    text-align: center;
     width: 100%;
     max-width: none;
-    align-items: flex-start;
   }
 
   .hero-eyebrow {
@@ -112,12 +113,18 @@
     margin-bottom: 28px;
     font-size: 46px;
     line-height: 1.05;
+        text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-text {
     max-width: 300px;
     font-size: 17px;
     line-height: 27px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contact-buttons {
