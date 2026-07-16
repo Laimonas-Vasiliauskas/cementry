@@ -15,7 +15,6 @@
 
 h1 {
     color: var(--gold-light);
-    font-family: 'Cormorant Garamond', serif;
     font-size: 50px;
     margin: 30px;
     padding: 10px;
@@ -23,7 +22,6 @@ h1 {
 
 .hero-text {
     color: var(--cream);
-    font-family: 'Manrope', sans-serif;
     font-size: 15px;
     margin: 30px;
     padding: 10px;
@@ -32,7 +30,6 @@ h1 {
 .hero-eyebrow{
     color: var(--gold);
     font-size: 25px;
-    font-family: 'Cormorant Garamond', serif;
     margin: 30px;
     padding: 10px;
 }

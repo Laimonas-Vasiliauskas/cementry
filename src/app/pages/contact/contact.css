@@ -9,7 +9,6 @@
     margin: 50px;
     line-height: 1.15;
     color: var(--cream);
-    font-family: "Manrope", sans-serif;
     font-size: 15px;
 }
 .contact-page h1{
@@ -47,17 +46,6 @@
 .gold-btn:hover {
   background: transparent;
   color: var(--gold-light);
-}
-
-.viber-btn {
-  background: transparent;
-  color: var(--gold-light);
-}
-
-.viber-btn:hover {
-  background: var(--dark-gray);
-  border-color: var(--gold);
-  color: var(--gold);
 }
 
 @media (max-width: 600px) {

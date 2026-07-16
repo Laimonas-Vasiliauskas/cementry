@@ -28,7 +28,6 @@
 .service-card-content h3 {
   margin: 0 0 16px;
   color: var(--gold-light);
-  font-family: var(--font-heading);
   font-size: 26px;
   font-weight: 600;
 }
