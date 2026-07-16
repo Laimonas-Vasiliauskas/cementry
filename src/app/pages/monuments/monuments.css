@@ -1,0 +1,87 @@
+.service-page {
+  background: var(--black);
+  color: var(--cream);
+}
+.service-hero {
+    border-bottom: 1px solid var(--gold-dark);
+}
+.service-button {
+    margin-left: 40px;
+    padding: 10px;
+    background-color: var(--gold);
+    text-decoration: none;
+    color: var(--dark);
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100px;
+}
+img{
+  width: 600px;
+}
+.service-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.service-text{
+  font-size: 25px;
+  line-height: 1.15;
+  color: var(--cream);
+}
+h2{
+  color: var(--gold);
+}
+.step-card p {
+  color: var(--cream);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+ul, li {
+  list-style-type: none;
+}
+.steps-grid{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  line-height: 1.15;
+  font-size: 15px;
+  color: var(--cream);
+}
+.step-card{
+  background-color: var(--dark);
+  border: 1px solid var(--gold);
+  padding: 25px;
+  width: 400px;
+  height: 150px;
+}
+@media (max-width: 900px) {
+  .service-content {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .service-hero h1 {
+    font-size: 46px;
+  }
+  .service-image img {
+    height: 320px;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+  .service-text h2,
+  .service-steps h2,
+  .service-cta h2 {
+    font-size: 34px;
+  }
+}

@@ -3,9 +3,10 @@ import { Routes } from '@angular/router';
 import { Home } from './pages/home/home';
 import { Services } from './pages/services/services';
 import { Monuments } from './pages/monuments/monuments';
-import { GraveCare } from './pages/grave-care/grave-care';
-import { Granite } from './pages/granite/granite';
-import { Foundations } from './pages/foundations/foundations';
+import { SlabCovering } from './pages/slab-covering/slab-covering';
+import { Countertops } from './pages/countertops/countertops';
+import { GraveRestoration } from './pages/grave-restoration/grave-restoration';
+import { InteriorDetails } from './pages/interior-details/interior-details';
 import { Portfolio } from './pages/portfolio/portfolio';
 import { Contact } from './pages/contact/contact';
 import { NotFound } from './pages/not-found/not-found';
@@ -24,22 +25,27 @@ export const routes: Routes = [
   {
     path: 'paminklai',
     component: Monuments,
-    title: 'Paminklai'
+    title: 'Paminklų gamyba'
   },
   {
-    path: 'kapu-prieziura',
-    component: GraveCare,
-    title: 'Kapų priežiūra'
+    path: 'ploksciu-dengimas',
+    component: SlabCovering,
+    title: 'Plokščių dengimas'
   },
   {
-    path: 'granito-plokstes',
-    component: Granite,
-    title: 'Granito plokštės'
+    path: 'stalvirsiai',
+    component: Countertops,
+    title: 'Stalviršių gamyba'
   },
   {
-    path: 'pamatu-liejimas',
-    component: Foundations,
-    title: 'Pamatų liejimas'
+    path: 'kapavieciu-restauravimas',
+    component: GraveRestoration,
+    title: 'Kapaviečių restauravimas'
+  },
+  {
+    path: 'interjero-detales',
+    component: InteriorDetails,
+    title: 'Interjero detalės'
   },
   {
     path: 'atlikti-darbai',

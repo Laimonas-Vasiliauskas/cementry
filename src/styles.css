@@ -9,6 +9,9 @@
   --cream: #F3EBDD;          /* šviesus tekstas */
   --white: #FFFFFF;          /* svarbiausias tekstas */
   --muted: #B8B1A6;          /* mažiau svarbus tekstas */
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Manrope', sans-serif;
+
 }
 
 html,
@@ -18,7 +21,22 @@ body {
   margin: 0;
   background: var(--black);
   color: var(--cream);
-  font-family: Arial, sans-serif;
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+}
+
+p,
+a,
+button,
+li,
+span {
+  font-family: var(--font-body);
 }
 
 .services-dropdown {
