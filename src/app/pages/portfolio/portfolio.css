@@ -55,6 +55,60 @@
   border-color: var(--gold);
 }
 
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+  box-sizing: border-box;
+
+  background: rgba(0, 0, 0, 0.92);
+  cursor: zoom-out;
+}
+
+.lightbox img {
+  display: block;
+  max-width: 95vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+  border: 1px solid var(--gold-dark);
+  cursor: default;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+
+  width: 50px;
+  height: 50px;
+
+  padding: 0;
+  background: transparent;
+  border: none;
+
+  color: var(--cream);
+  font-size: 45px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.lightbox-close:hover {
+  color: var(--gold-light);
+}
+
+.portfolio-gallery img {
+  cursor: zoom-in;
+}
+
 @media (min-width: 601px) and (max-width: 1200px) {
   .portfolio-hero {
     padding: 55px 7%;
@@ -100,5 +154,19 @@
 
   .portfolio-gallery img {
     height: 260px;
+  }
+
+    .lightbox {
+    padding: 20px;
+  }
+
+  .lightbox img {
+    max-width: 100%;
+    max-height: 85vh;
+  }
+
+  .lightbox-close {
+    top: 10px;
+    right: 15px;
   }
 }

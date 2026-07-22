@@ -6,15 +6,79 @@
       restauravimo ir kitus granito darbus.
     </p>
   </div>
+
   <div class="portfolio-gallery">
-    <img src="/images/portfolio/darbas-1.jpg" alt="Atliktas granito darbas">
-    <img src="/images/portfolio/darbas-2.jpg" alt="Atliktas granito darbas">
-    <img src="/images/portfolio/darbas-3.jpg" alt="Atliktas granito darbas">
-    <img src="/images/portfolio/darbas-4.jpg" alt="Atliktas granito darbas">
-    <img src="/images/portfolio/darbas-5.jpg" alt="Atliktas granito darbas">
-    <img src="/images/portfolio/darbas-6.jpg" alt="Atliktas granito darbas">
-    <img src="/images/portfolio/darbas-7.jpg" alt="Atliktas granito darbas">
-    <img src="/images/portfolio/darbas-8.jpg" alt="Atliktas granito darbas">
-    <img src="/images/portfolio/darbas-9.jpg" alt="Atliktas granito darbas">
+    <img
+      src="/images/paminklas.png"
+      alt="Atliktas granito darbas"
+      (click)="openImage('/images/paminklas.png')"
+    >
+
+    <img
+      src="/images/portfolio/darbas-2.jpg"
+      alt="Atliktas granito darbas"
+      (click)="openImage('/images/portfolio/darbas-2.jpg')"
+    >
+
+    <img
+      src="/images/portfolio/darbas-3.jpg"
+      alt="Atliktas granito darbas"
+      (click)="openImage('/images/portfolio/darbas-3.jpg')"
+    >
+
+    <img
+      src="/images/portfolio/darbas-4.jpg"
+      alt="Atliktas granito darbas"
+      (click)="openImage('/images/portfolio/darbas-4.jpg')"
+    >
+
+    <img
+      src="/images/portfolio/darbas-5.jpg"
+      alt="Atliktas granito darbas"
+      (click)="openImage('/images/portfolio/darbas-5.jpg')"
+    >
+
+    <img
+      src="/images/portfolio/darbas-6.jpg"
+      alt="Atliktas granito darbas"
+      (click)="openImage('/images/portfolio/darbas-6.jpg')"
+    >
+
+    <img
+      src="/images/portfolio/darbas-7.jpg"
+      alt="Atliktas granito darbas"
+      (click)="openImage('/images/portfolio/darbas-7.jpg')"
+    >
+
+    <img
+      src="/images/portfolio/darbas-8.jpg"
+      alt="Atliktas granito darbas"
+      (click)="openImage('/images/portfolio/darbas-8.jpg')"
+    >
+
+    <img
+      src="/images/portfolio/darbas-9.jpg"
+      alt="Atliktas granito darbas"
+      (click)="openImage('/images/portfolio/darbas-9.jpg')"
+    >
   </div>
+
+  @if (selectedImage) {
+    <div class="lightbox" (click)="closeImage()">
+      <button
+        type="button"
+        class="lightbox-close"
+        aria-label="Uždaryti nuotrauką"
+        (click)="closeImage()"
+      >
+        ×
+      </button>
+
+      <img
+        [src]="selectedImage"
+        alt="Padidinta atlikto darbo nuotrauka"
+        (click)="$event.stopPropagation()"
+      >
+    </div>
+  }
 </section>
