@@ -51,8 +51,22 @@
   color: var(--gold-light);
 }
 
-@media (max-width: 600px){
-    .service-card {
-        max-width: 300px;
-    }
+@media (max-width: 600px) {
+  .service-card {
+    max-width: 300px;
+    height: auto;
+  }
+
+  .service-card img {
+    height: 300px;
+  }
+
+  .service-card-content {
+    padding: 22px 20px 25px;
+  }
+
+  .service-card-content a {
+    display: inline-block;
+    margin-top: 5px;
+  }
 }
