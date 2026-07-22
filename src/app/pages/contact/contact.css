@@ -1,18 +1,23 @@
 .map-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
 }
 .contact-page{
-    text-align: center;
-    margin: 50px;
-    line-height: 1.15;
-    color: var(--cream);
-    font-size: 15px;
+  text-align: center;
+  margin: 50px;
+  line-height: 1.15;
+  color: var(--cream);
+  font-size: 15px;
 }
 .contact-page h1{
-    color: var(--gold-light);
+  color: var(--gold-light);
+  font-size: 50px;
+}
+
+.contact-page p{
+  font-size: 25px;
 }
 
 .contact-buttons {
@@ -49,33 +54,33 @@
 }
 
 @media (max-width: 600px) {
-    .contact-page {
-    padding: 55px var(--page-padding);
-    }
+  .contact-page {
+  padding: 55px var(--page-padding);
+  }
 
-    .contact-header {
-    margin-bottom: 35px;
-    }
+  .contact-header {
+  margin-bottom: 35px;
+  }
 
-    h1 {
-    font-size: 34px;
-    }
+  h1 {
+  font-size: 34px;
+  }
 
-    p {
-    font-size: 15px;
-    line-height: 24px;
-    }
+  p {
+  font-size: 15px;
+  line-height: 24px;
+  }
 
-    .map-wrapper iframe {
-    height: 330px;
-    }
+  .map-wrapper iframe {
+  height: 330px;
+  }
 
-    .contact-buttons {
-    flex-direction: column;
-    gap: 12px;
-    }
+  .contact-buttons {
+  flex-direction: column;
+  gap: 12px;
+  }
 
-    .contact-btn {
-    max-width: 280px;
-    }
+  .contact-btn {
+  max-width: 280px;
+  }
 }

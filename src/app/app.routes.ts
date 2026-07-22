@@ -10,7 +10,7 @@ import { InteriorDetails } from './pages/interior-details/interior-details';
 import { Portfolio } from './pages/portfolio/portfolio';
 import { Contact } from './pages/contact/contact';
 import { NotFound } from './pages/not-found/not-found';
-
+import { FuneralServices } from './pages/funeral-services/funeral-services';
 export const routes: Routes = [
   {
     path: '',
@@ -46,6 +46,11 @@ export const routes: Routes = [
     path: 'interjero-detales',
     component: InteriorDetails,
     title: 'Interjero detalės'
+  },
+  {
+  path: 'laidojimo-paslaugos',
+  component: FuneralServices,
+  title: 'Laidojimo paslaugos'
   },
   {
     path: 'atlikti-darbai',

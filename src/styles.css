@@ -74,3 +74,309 @@ span {
   height: 0 !important;
   padding: 0 !important;
 }
+
+.service-page {
+  background: var(--black);
+  color: var(--cream);
+}
+
+.service-page .service-hero {
+  padding: 25px;
+  text-align: center;
+  border-bottom: 1px solid var(--gold-dark);
+}
+
+.service-page .service-hero p {
+  padding: 25px;
+  font-size: 20px;
+}
+
+.service-page h1 {
+  color: var(--gold);
+  font-size: 50px;
+  text-align: center;
+}
+
+.service-page h2 {
+  color: var(--gold);
+  font-size: 25px;
+  text-align: center;
+}
+
+.service-page .service-content {
+  display: grid;
+  grid-template-columns: 600px 434px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 120px;
+  margin: 50px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.service-page .service-text {
+  color: var(--cream);
+  font-size: 25px;
+}
+
+.service-page .service-text li {
+  line-height: 2;
+}
+
+.service-page .service-text h1 {
+  margin: 0 0 20px;
+  padding-left: var(--list-offset);
+  text-align: left;
+}
+
+.service-page .service-content img {
+  width: 434px;
+  max-width: 100%;
+  height: 325px;
+  display: block;
+  object-fit: cover;
+}
+
+.service-page .steps-grid {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--cream);
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+.service-page .step-card {
+  width: 400px;
+  height: auto;
+  margin-bottom: 50px;
+  padding: 25px;
+  background-color: var(--dark);
+  border: 1px solid var(--gold);
+  box-sizing: border-box;
+}
+
+.service-page .step-card p {
+  color: var(--cream);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+
+.service-page .contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.service-page .contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 26px;
+  border: 1px solid var(--gold-dark);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.service-page .gold-btn {
+  background: var(--gold);
+  color: var(--black);
+  border-color: var(--gold);
+}
+
+.service-page .gold-btn:hover {
+  background: transparent;
+  color: var(--gold-light);
+}
+
+@media (max-width: 600px){
+  .service-page .service-hero {
+    padding: 20px;
+  }
+
+  .service-page .service-hero p {
+    font-size: 15px;
+    line-height: 23px;
+    margin: 0;
+  }
+
+  .service-page h1 {
+    font-size: 40px;
+    line-height: 1.05;
+    text-align: center;
+    margin: 0;
+  }
+
+  .service-page h2 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .service-page .service-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .service-page .service-text {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .service-page .service-text h1 {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .service-page .service-text li {
+    line-height: 1.6;
+  }
+
+  .service-page .service-content img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .service-page .steps-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .service-page .step-card {
+    width: 80%;
+    height: auto;
+    min-height: 150px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+  }
+
+  .service-page .step-card p {
+    text-align: center;
+  }
+
+  .service-page .contact-buttons {
+    width: 100%;
+    padding: 0 20px;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 0;
+  }
+
+  .service-page .contact-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 601px) and (max-width: 1200px) {
+  .service-page .service-hero {
+    padding: 50px 7%;
+  }
+
+  .service-page .service-hero h1 {
+    font-size: 45px;
+  }
+
+  .service-page .service-hero p {
+    max-width: 800px;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .service-page .service-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 40px;
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 55px 7%;
+    box-sizing: border-box;
+  }
+
+  .service-page .service-text {
+    width: fit-content;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .service-page .service-text h1 {
+    margin: 0 0 20px;
+    padding-left: 0;
+  }
+
+  .service-page .service-text ul {
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 22px;
+    text-align: left;
+  }
+
+  .service-page .service-content > div:last-child {
+    width: 100%;
+    max-width: 650px;
+  }
+
+  .service-page .service-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .service-page .service-steps {
+    width: 100%;
+    padding: 0 7% 60px;
+    box-sizing: border-box;
+  }
+
+  .service-page .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .service-page .step-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 210px;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+
+  .service-page .step-card h2 {
+    font-size: 24px;
+  }
+
+  .service-page .step-card p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .service-page > div > h1 {
+    padding: 0 7%;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .service-page .contact-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0 7% 60px;
+  }
+}

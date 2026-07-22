@@ -1,6 +1,7 @@
 .service-card {
   width: 100%;
   max-width: 400px;
+  max-height: 554px;
   background: var(--dark);
   border: 1px solid var(--gold-dark);
   overflow: hidden;
@@ -10,7 +11,6 @@
 .service-card:hover {
   transform: translateY(-6px);
   border-color: var(--gold);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
 }
 
 .service-card img {
