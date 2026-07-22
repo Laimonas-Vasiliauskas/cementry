@@ -15,33 +15,11 @@ header {
     align-items: center;
 }
 
-nav a,
-.services-button {
-  height: 36px;
-  padding: 0 10px !important;
-  margin: 0;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  color: var(--cream) !important;
-  font-size: 18px;
-  line-height: 20px;
-  text-decoration: none;
-}
-
-.services-button {
-  min-width: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-}
-
-.services-button .mdc-button__label {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: inherit;
+nav a{
+    color: var(--cream);
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 nav a:hover{
