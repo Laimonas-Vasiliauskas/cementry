@@ -1,7 +1,5 @@
 import { Routes } from '@angular/router';
-
 import { Home } from './pages/home/home';
-import { Services } from './pages/services/services';
 import { Monuments } from './pages/monuments/monuments';
 import { SlabCovering } from './pages/slab-covering/slab-covering';
 import { Countertops } from './pages/countertops/countertops';
@@ -15,47 +13,42 @@ export const routes: Routes = [
   {
     path: '',
     component: Home,
-    title: 'Pagrindinis'
-  },
-  {
-    path: 'paslaugos',
-    component: Services,
-    title: 'Paslaugos'
+    title: 'paminklaiklaipedoje.lt'
   },
   {
     path: 'paminklai',
     component: Monuments,
-    title: 'Paminklų gamyba'
+    title: 'Paminklų gamyba Klaipėdoje'
   },
   {
-    path: 'ploksciu-dengimas',
+    path: 'granito-ploksciu-dengimas',
     component: SlabCovering,
-    title: 'Plokščių dengimas'
+    title: 'Plokščių dengimas Klaipėdoje'
   },
   {
-    path: 'stalvirsiai',
+    path: 'granito-stalvirsiai',
     component: Countertops,
-    title: 'Stalviršių gamyba'
+    title: 'Stalviršių gamyba Klaipėdoje'
   },
   {
     path: 'kapavieciu-restauravimas',
     component: GraveRestoration,
-    title: 'Kapaviečių restauravimas'
+    title: 'Kapaviečių restauravimas Klaipėdoje'
   },
   {
-    path: 'interjero-detales',
+    path: 'granito-interjero-detales',
     component: InteriorDetails,
-    title: 'Interjero detalės'
+    title: 'Interjero detalės Klaipėdoje'
   },
   {
-  path: 'laidojimo-paslaugos',
-  component: FuneralServices,
-  title: 'Laidojimo paslaugos'
+    path: 'laidojimo-paslaugos',
+    component: FuneralServices,
+    title: 'Laidojimo paslaugos Klaipėdoje'
   },
   {
     path: 'atlikti-darbai',
     component: Portfolio,
-    title: 'Atlikti darbai'
+    title: 'Atlikti darbai Klaipėdoje'
   },
   {
     path: 'kontaktai',

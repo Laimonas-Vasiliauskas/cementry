@@ -1,10 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ContactForm } from '../../shared/components/contact-form/contact-form';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
   imports: [ContactForm],
   templateUrl: './contact.html',
-  styleUrl: './contact.css',
+  styleUrls: ['./contact.css'],
 })
-export class Contact {}
+export class Contact {
+  private title = inject(Title);
+  private meta = inject(Meta);
+
+  constructor() {
+    this.title.setTitle(
+      'Kontaktai | Paminklų gamyba Klaipėdoje'
+    );
+
+    this.meta.updateTag({
+      name: 'description',
+      content:
+        'Susisiekite dėl paminklų gamybos, kapaviečių tvarkymo, restauravimo, granito darbų ir laidojimo paslaugų Klaipėdoje.'
+    });
+  }
+}

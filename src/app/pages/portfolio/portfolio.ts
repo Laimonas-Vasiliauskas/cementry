@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,7 +8,22 @@ import { Component } from '@angular/core';
   styleUrl: './portfolio.css'
 })
 export class Portfolio {
+  private title = inject(Title);
+  private meta = inject(Meta);
+
   selectedImage: string | null = null;
+
+  constructor() {
+    this.title.setTitle(
+      'Atlikti kapaviečių darbai Klaipėdoje | Įmonės pavadinimas'
+    );
+
+    this.meta.updateTag({
+      name: 'description',
+      content:
+        'Peržiūrėkite mūsų atliktus paminklų gamybos, granito plokščių montavimo, kapaviečių restauravimo ir kitus darbus.'
+    });
+  }
 
   openImage(image: string): void {
     this.selectedImage = image;
