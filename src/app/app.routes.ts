@@ -13,27 +13,27 @@ export const routes: Routes = [
   {
     path: '',
     component: Home,
-    title: 'paminklaiklaipedoje.lt'
+    title: 'Akmens Namas'
   },
   {
     path: 'paminklai',
     component: Monuments,
-    title: 'Paminklų gamyba Klaipėdoje'
+    title: 'Akmens Namas | Paminklai ir granito darbai Klaipėdoje'
   },
   {
     path: 'granito-ploksciu-dengimas',
     component: SlabCovering,
-    title: 'Plokščių dengimas Klaipėdoje'
+    title: 'Kapaviečių dengimas granito plokštėmis | Akmens Namas'
   },
   {
     path: 'granito-stalvirsiai',
     component: Countertops,
-    title: 'Stalviršių gamyba Klaipėdoje'
+    title: 'Granito stalviršių gamyba Klaipėdoje | Akmens Namas'
   },
   {
     path: 'kapavieciu-restauravimas',
     component: GraveRestoration,
-    title: 'Kapaviečių restauravimas Klaipėdoje'
+    title: 'Kapaviečių restauravimas Klaipėdoje | Akmens Namas'
   },
   {
     path: 'granito-interjero-detales',
@@ -43,17 +43,17 @@ export const routes: Routes = [
   {
     path: 'laidojimo-paslaugos',
     component: FuneralServices,
-    title: 'Laidojimo paslaugos Klaipėdoje'
+    title: 'Laidojimo paslaugos | Akmens Namas'
   },
   {
     path: 'atlikti-darbai',
     component: Portfolio,
-    title: 'Atlikti darbai Klaipėdoje'
+    title: 'Atlikti darbai | Akmens Namas'
   },
   {
     path: 'kontaktai',
     component: Contact,
-    title: 'Kontaktai'
+    title: 'Kontaktai | Akmens Namas'
   },
   {
     path: '**',
