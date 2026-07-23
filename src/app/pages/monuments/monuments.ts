@@ -13,7 +13,7 @@ export class Monuments {
 
   constructor() {
     this.title.setTitle(
-      'Paminklų gamyba Klaipėdoje | Įmonės pavadinimas'
+      'Paminklų gamyba Klaipėdoje | Akmens Namas'
     );
 
     this.meta.updateTag({

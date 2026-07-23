@@ -1,23 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
 :root {
-  --black: #0B0B0B;          /* pagrindinis fonas */
-  --dark: #141414;           /* header, footer, kortelės */
-  --dark-gray: #1C1C1C;      /* hover / sekcijų fonas */
-  --gold: #C79A43;           /* pagrindinė aukso spalva */
-  --gold-light: #E0B968;     /* tekstų akcentai, hover */
-  --gold-dark: #8E6728;      /* tamsesni aukso rėmeliai */
-  --cream: #F3EBDD;          /* šviesus tekstas */
-  --white: #FFFFFF;          /* svarbiausias tekstas */
-  --muted: #B8B1A6;          /* mažiau svarbus tekstas */
-  --font-heading: 'Cormorant Garamond', serif;
-  --font-body: 'Manrope', sans-serif;
+  --black: #0b0b0b;
+  --dark: #141414;
+  --dark-gray: #1c1c1c;
 
+  --gold: #c79a43;
+  --gold-light: #e0b968;
+  --gold-dark: #8e6728;
+
+  --cream: #f3ebdd;
+  --white: #ffffff;
+  --muted: #b8b1a6;
+
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Manrope", sans-serif;
+
+  --list-offset: 52px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html,
 body {
-  width: 100%;
-  margin: 0;
   margin: 0;
   background: var(--black);
   color: var(--cream);
@@ -39,12 +46,15 @@ span {
   font-family: var(--font-body);
 }
 
+/* Angular Material meniu */
+
 .services-dropdown {
+  margin-top: 20px;
+  margin-left: -20px;
+
   background: var(--dark) !important;
   border: 1px solid var(--gold-dark);
   border-radius: 0 !important;
-  margin-top: 20px;
-  margin-left: -20px;
 }
 
 .services-dropdown .mat-mdc-menu-item {
@@ -56,29 +66,35 @@ span {
 }
 
 .mdc-button__label {
-    color: var(--cream) !important;
+  color: var(--cream) !important;
 }
 
-.mdc-button__label:hover {
+.mat-mdc-button:hover .mdc-button__label {
   color: var(--gold) !important;
 }
 
-.mat-mdc-unelevated-button:not(:disabled){
+.mat-mdc-unelevated-button:not(:disabled) {
   background-color: var(--dark) !important;
 }
 
-.mat-mdc-unelevated-button{
-  font-size: large !important;
+.mat-mdc-unelevated-button {
+  min-height: 40px !important;
+  padding: 0 12px !important;
+
   font-family: Arial, sans-serif !important;
+  font-size: 18px !important;
+
   transition: none !important;
-  height: 0 !important;
-  padding: 0 !important;
 }
+
+/* Bendras paslaugų puslapių stilius */
 
 .service-page {
   background: var(--black);
   color: var(--cream);
 }
+
+/* Hero */
 
 .service-page .service-hero {
   padding: 25px;
@@ -86,32 +102,32 @@ span {
   border-bottom: 1px solid var(--gold-dark);
 }
 
-.service-page .service-hero p {
-  line-height: 1.5;
-  font-size: 20px;
-}
-
-.service-page h1 {
+.service-page .service-hero h1 {
+  margin: 20px 0;
   color: var(--gold);
   font-size: 50px;
-  text-align: center;
+  line-height: 1.1;
 }
 
-.service-page h2 {
-  color: var(--gold);
-  font-size: 25px;
-  text-align: center;
+.service-page .service-hero p {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  font-size: 20px;
+  line-height: 30px;
 }
+
+/* Paslaugos aprašymas ir nuotrauka */
 
 .service-page .service-content {
   display: grid;
   grid-template-columns: 600px 434px;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   column-gap: 120px;
+
   margin: 50px auto;
   padding: 0 40px;
-  box-sizing: border-box;
 }
 
 .service-page .service-text {
@@ -119,23 +135,40 @@ span {
   font-size: 25px;
 }
 
+.service-page .service-text h1 {
+  margin: 0 0 20px;
+  padding-left: var(--list-offset);
+
+  color: var(--gold);
+  font-size: 50px;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.service-page .service-text ul {
+  margin: 0;
+  padding-left: var(--list-offset);
+}
+
 .service-page .service-text li {
   line-height: 2;
 }
 
-.service-page .service-text h1 {
-  margin: 0 0 20px;
-  padding-left: var(--list-offset);
-  text-align: left;
+.service-page .service-content > div:last-child {
+  width: 434px;
 }
 
 .service-page .service-content img {
-  width: 434px;
-  max-width: 100%;
-  height: 325px;
   display: block;
+
+  width: 434px;
+  height: 325px;
+  max-width: 100%;
+
   object-fit: cover;
 }
+
+/* Darbų etapai */
 
 .service-page .steps-grid {
   display: flex;
@@ -143,6 +176,7 @@ span {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+
   color: var(--cream);
   font-size: 18px;
   line-height: 1.15;
@@ -150,15 +184,25 @@ span {
 
 .service-page .step-card {
   width: 400px;
-  height: auto;
+  min-height: 190px;
   margin-bottom: 50px;
   padding: 25px;
-  background-color: var(--dark);
+
+  background: var(--dark);
   border: 1px solid var(--gold);
-  box-sizing: border-box;
+}
+
+.service-page .step-card h2 {
+  margin: 10px 0 16px;
+
+  color: var(--gold);
+  font-size: 25px;
+  text-align: center;
 }
 
 .service-page .step-card p {
+  margin: 0;
+
   color: var(--cream);
   font-size: 16px;
   font-weight: 400;
@@ -166,30 +210,48 @@ span {
   text-align: center;
 }
 
+/* Apatinė antraštė */
+
+.service-page > div > h1 {
+  color: var(--gold);
+  font-size: 50px;
+  text-align: center;
+}
+
+/* Kontaktų mygtukai */
+
 .service-page .contact-buttons {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+
+  margin: 50px 0;
 }
 
 .service-page .contact-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   padding: 13px 26px;
+
   border: 1px solid var(--gold-dark);
+  color: var(--cream);
+
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.25s ease;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .service-page .gold-btn {
   background: var(--gold);
-  color: var(--black);
   border-color: var(--gold);
+  color: var(--black);
 }
 
 .service-page .gold-btn:hover {
@@ -197,53 +259,176 @@ span {
   color: var(--gold-light);
 }
 
-@media (max-width: 600px){
+/* Planšetės */
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .service-page .service-hero {
+    padding: 50px;
+  }
+
+  .service-page .service-hero h1 {
+    font-size: 45px;
+  }
+
+  .service-page .service-hero p {
+    max-width: 800px;
+    font-size: 17px;
+    line-height: 27px;
+  }
+
+  .service-page .service-content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 40px;
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 55px 50px;
+  }
+
+  .service-page .service-text {
+    width: fit-content;
+    max-width: 700px;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  .service-page .service-text h1 {
+    margin: 0 0 20px;
+    padding-left: 0;
+
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .service-page .service-text ul {
+    display: inline-block;
+
+    margin: 0 auto;
+    padding-left: 22px;
+
+    text-align: left;
+  }
+
+  .service-page .service-content > div:last-child {
+    width: 100%;
+    max-width: 650px;
+  }
+
+  .service-page .service-content img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .service-page .service-steps {
+    width: 100%;
+    padding: 0 50px 60px;
+  }
+
+  .service-page .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .service-page .step-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 210px;
+    margin-bottom: 0;
+  }
+
+  .service-page .step-card h2 {
+    font-size: 24px;
+  }
+
+  .service-page .step-card p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .service-page > div > h1 {
+    padding: 0 50px;
+    font-size: 40px;
+  }
+
+  .service-page .contact-buttons {
+    flex-wrap: wrap;
+    gap: 15px;
+
+    padding: 0 50px;
+    margin-bottom: 60px;
+  }
+}
+
+/* Telefonai */
+
+@media (max-width: 600px) {
   .service-page .service-hero {
     padding: 20px;
   }
 
+  .service-page .service-hero h1 {
+    margin: 20px 0;
+    font-size: 40px;
+    line-height: 42px;
+  }
+
   .service-page .service-hero p {
+    margin: 0;
+
     font-size: 15px;
     line-height: 23px;
-    margin: 0;
-  }
-
-  .service-page h1 {
-    font-size: 40px;
-    line-height: 1.05;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .service-page h2 {
-    font-size: 32px;
-    line-height: 1.1;
   }
 
   .service-page .service-content {
     grid-template-columns: 1fr;
     gap: 35px;
+
+    margin: 0;
+    padding: 40px 20px;
   }
 
   .service-page .service-text {
     width: 100%;
     font-size: 18px;
+    text-align: center;
   }
 
   .service-page .service-text h1 {
     padding-left: 0;
+
+    font-size: 40px;
+    line-height: 42px;
     text-align: center;
   }
 
+  .service-page .service-text ul {
+    display: inline-block;
+
+    margin: 0 auto;
+    padding-left: 24px;
+
+    text-align: left;
+  }
+
   .service-page .service-text li {
-    line-height: 1.6;
+    line-height: 29px;
+  }
+
+  .service-page .service-content > div:last-child {
+    width: 100%;
   }
 
   .service-page .service-content img {
     width: 100%;
     height: 280px;
-    object-fit: cover;
   }
 
   .service-page .steps-grid {
@@ -254,130 +439,33 @@ span {
 
   .service-page .step-card {
     width: 80%;
-    height: auto;
     min-height: 150px;
     margin-bottom: 0;
-    box-sizing: border-box;
   }
 
-  .service-page .step-card p {
-    text-align: center;
+  .service-page .step-card h2 {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .service-page > div > h1 {
+    margin: 20px 0;
+    padding: 0 20px;
+
+    font-size: 40px;
+    line-height: 42px;
   }
 
   .service-page .contact-buttons {
-    width: 100%;
-    padding: 0 20px;
     flex-direction: column;
-    box-sizing: border-box;
-    margin-top: 0;
+    gap: 10px;
+
+    width: 100%;
+    margin: 0 0 50px;
+    padding: 0 20px;
   }
 
   .service-page .contact-btn {
     width: 100%;
-    box-sizing: border-box;
-  }
-}
-@media (min-width: 601px) and (max-width: 1200px) {
-  .service-page .service-hero {
-    padding: 50px 7%;
-  }
-
-  .service-page .service-hero h1 {
-    font-size: 45px;
-  }
-
-  .service-page .service-hero p {
-    max-width: 800px;
-    font-size: 17px;
-    line-height: 1.6;
-  }
-
-  .service-page .service-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 40px;
-
-    width: 100%;
-    margin: 0 auto;
-    padding: 55px 7%;
-    box-sizing: border-box;
-  }
-
-  .service-page .service-text {
-    width: fit-content;
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .service-page .service-text h1 {
-    margin: 0 0 20px;
-    padding-left: 0;
-  }
-
-  .service-page .service-text ul {
-    display: inline-block;
-    margin: 0 auto;
-    padding-left: 22px;
-    text-align: left;
-  }
-
-  .service-page .service-content > div:last-child {
-    width: 100%;
-    max-width: 650px;
-  }
-
-  .service-page .service-content img {
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-  }
-
-  .service-page .service-steps {
-    width: 100%;
-    padding: 0 7% 60px;
-    box-sizing: border-box;
-  }
-
-  .service-page .steps-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 25px;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  .service-page .step-card {
-    width: 100%;
-    min-width: 0;
-    min-height: 210px;
-    padding: 25px;
-    box-sizing: border-box;
-  }
-
-  .service-page .step-card h2 {
-    font-size: 24px;
-  }
-
-  .service-page .step-card p {
-    font-size: 15px;
-    line-height: 1.6;
-  }
-
-  .service-page > div > h1 {
-    padding: 0 7%;
-    text-align: center;
-    font-size: 40px;
-  }
-
-  .service-page .contact-buttons {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 0 7% 60px;
   }
 }
