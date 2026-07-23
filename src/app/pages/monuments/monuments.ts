@@ -21,5 +21,10 @@ export class Monuments {
       content:
         'Gaminame ir montuojame granito paminklus Klaipėdoje bei Klaipėdos rajone. Individualios formos, granito spalvos, užrašai ir dekoras.'
     });
+
+    this.meta.updateTag({
+      name: 'robots',
+      content: 'index, follow'
+    });
   }
 }

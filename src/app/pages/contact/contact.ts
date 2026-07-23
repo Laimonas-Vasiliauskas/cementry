@@ -22,5 +22,10 @@ export class Contact {
       content:
         'Susisiekite dėl paminklų gamybos, kapaviečių tvarkymo, restauravimo, granito darbų ir laidojimo paslaugų Klaipėdoje.'
     });
+
+    this.meta.updateTag({
+      name: 'robots',
+      content: 'index, follow'
+    });
   }
 }

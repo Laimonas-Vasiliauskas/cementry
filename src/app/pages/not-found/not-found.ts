@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnDestroy } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
@@ -7,21 +7,20 @@ import { Meta, Title } from '@angular/platform-browser';
   templateUrl: './not-found.html',
   styleUrl: './not-found.css'
 })
-export class NotFound {
+export class NotFound implements OnDestroy {
   private title = inject(Title);
   private meta = inject(Meta);
 
   constructor() {
-    this.title.setTitle('Puslapis nerastas | Įmonės pavadinimas');
+    this.title.setTitle('Puslapis nerastas | Akmens Namas');
 
     this.meta.updateTag({
       name: 'robots',
       content: 'noindex, nofollow'
     });
+  }
 
-    this.meta.updateTag({
-      name: 'description',
-      content: 'Ieškomas puslapis nerastas.'
-    });
+  ngOnDestroy(): void {
+    this.meta.removeTag("name='robots'");
   }
 }

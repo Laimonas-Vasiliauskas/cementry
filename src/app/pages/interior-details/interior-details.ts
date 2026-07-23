@@ -21,5 +21,10 @@ export class InteriorDetails {
       content:
         'Gaminame granito vazas, žvakides, stalelius, suoliukus ir dekoratyvines detales kapavietėms Klaipėdoje bei Klaipėdos rajone.'
     });
+
+    this.meta.updateTag({
+      name: 'robots',
+      content: 'index, follow'
+    });
   }
 }

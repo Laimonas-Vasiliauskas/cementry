@@ -21,5 +21,10 @@ export class Countertops {
       content:
         'Gaminame granito stalelius, suoliukus ir jų komplektus kapavietėms Klaipėdoje bei Klaipėdos rajone. Pristatymas ir montavimas.'
     });
+
+    this.meta.updateTag({
+      name: 'robots',
+      content: 'index, follow'
+    });
   }
 }

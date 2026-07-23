@@ -22,5 +22,10 @@ export class Home {
       content:
         'Akmens Namas – paminklų gamyba, granito darbai, kapaviečių restauravimas ir laidojimo paslaugos Klaipėdoje bei Klaipėdos rajone.'
     });
+
+    this.meta.updateTag({
+      name: 'robots',
+      content: 'index, follow'
+    });
   }
 }

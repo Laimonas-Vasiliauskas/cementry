@@ -21,5 +21,10 @@ export class GraveRestoration {
       content:
         'Restauruojame ir atnaujiname senas kapavietes Klaipėdoje bei Klaipėdos rajone. Remontuojame pamatus, keičiame granito detales ir sutvirtiname paminklus.'
     });
+
+    this.meta.updateTag({
+      name: 'robots',
+      content: 'index, follow'
+    });
   }
 }

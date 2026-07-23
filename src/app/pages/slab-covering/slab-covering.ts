@@ -21,5 +21,10 @@ export class SlabCovering {
       content:
         'Dengiame kapavietes granito plokštėmis Klaipėdoje ir Klaipėdos rajone. Atliekame matavimo, gamybos, pagrindo paruošimo ir montavimo darbus.'
     });
+
+    this.meta.updateTag({
+      name: 'robots',
+      content: 'index, follow'
+    });
   }
 }

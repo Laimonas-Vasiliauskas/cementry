@@ -23,6 +23,11 @@ export class Portfolio {
       content:
         'Peržiūrėkite mūsų atliktus paminklų gamybos, granito plokščių montavimo, kapaviečių restauravimo ir kitus darbus.'
     });
+
+    this.meta.updateTag({
+      name: 'robots',
+      content: 'index, follow'
+    });
   }
 
   openImage(image: string): void {

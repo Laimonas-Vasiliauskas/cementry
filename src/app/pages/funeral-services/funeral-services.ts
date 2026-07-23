@@ -21,5 +21,10 @@ export class FuneralServices {
       content:
         'Laidojimo reikmenys, velionio transportavimas, kapo iškasimas, medinio kryžiaus pastatymas ir kapo sutvarkymas Klaipėdoje bei Klaipėdos rajone.'
     });
+
+    this.meta.updateTag({
+      name: 'robots',
+      content: 'index, follow'
+    });
   }
 }
