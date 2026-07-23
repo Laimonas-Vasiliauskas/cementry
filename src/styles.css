@@ -212,7 +212,8 @@ span {
     font-size: 40px;
     line-height: 1.05;
     text-align: center;
-    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .service-page h2 {
