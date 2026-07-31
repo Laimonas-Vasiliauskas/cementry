@@ -20,7 +20,7 @@ export class Home {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Akmens Namas – paminklų gamyba, granito darbai, kapaviečių restauravimas ir laidojimo paslaugos Klaipėdoje bei Klaipėdos rajone.'
+        'Akmens Namas Paminklų gamyba ir montavimas Klaipėdoje bei Klaipėdos rajone. Individualūs granito paminklai, graviravimas, kapaviečių įrengimas ir restauravimas'
     });
 
     this.meta.updateTag({
